@@ -1,0 +1,910 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{3EF3B3F6-26C9-429A-B5A6-7959F6E2F4E3}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>LedControlSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>LedControlSystem</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Release\</OutputPath>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.ShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AxInterop.ShockwaveFlashObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Newtonsoft.Json" />
+    <Reference Include="LedModel" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="LedService" />
+    <Reference Include="ZHUI" />
+    <Reference Include="ManagedWifi" />
+    <Reference Include="FlexCell" />
+    <Reference Include="System.Data" />
+    <Reference Include="LedResources" />
+    <Reference Include="LedCommunication" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="OfficeTool" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DbUtils.cs" />
+    <Compile Include="LedControlSystem\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LedControlSystem\formStart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IpInputExt.Ctrls\IpInputTextbox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IpInputExt.Ctrls\NumberTextBoxExt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem.CloudServer\CloudRecordToXml.cs" />
+    <Compile Include="LedControlSystem.CloudServer\CloudServerComm.cs" />
+    <Compile Include="LedControlSystem.CloudServer\formCloudCardParameter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem.CloudServer\formCloudServerAdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem.CloudServer\formCloudServerGroupInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem.CloudServer\formLoginUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem.CloudServer\GroupContactInfo.cs" />
+    <Compile Include="LedControlSystem.CloudServer\GroupOfCloudServer.cs" />
+    <Compile Include="LedControlSystem.CloudServer\GroupTerminal.cs" />
+    <Compile Include="LedControlSystem.CloudServer\RecordUpdateCmdMark.cs" />
+    <Compile Include="LedControlSystem.CloudServer\RecordUpdateProgramMark.cs" />
+    <Compile Include="LedControlSystem.CloudServer\SingleCmdRecord.cs" />
+    <Compile Include="LedControlSystem.CloudServer\TerminalData.cs" />
+    <Compile Include="LedControlSystem.CloudServer\TerminalRecord.cs" />
+    <Compile Include="LedControlSystem.CloudServer\TerminalResponseResult.cs" />
+    <Compile Include="LedControlSystem.CloudServer\TransData.cs" />
+    <Compile Include="LedControlSystem.CloudServer\TransDataStatus.cs" />
+    <Compile Include="LedControlSystem.Cloud\formCloudForgotPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem.Cloud\formCloudGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem.Cloud\formCloudGroupSending.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem.Cloud\formCloudGroupSendingSingle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem.Cloud\formCloudLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem.Cloud\formCloudManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem.Cloud\formCloudQueryReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem.Cloud\formCloudRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem.Cloud\formCloudSendData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem.Cloud\formCloudSendSingle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem.Cloud\formCloudTerminalParameter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem.Cloud\formCloudUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem.Fonts\FontFamiliesEx.cs" />
+    <Compile Include="Properties\Resources1.cs" />
+    <Compile Include="Properties\Settings.cs" />
+    <Compile Include="LedControlSystem\AnimationEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\AnimationEffect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\AnimationEvent.cs" />
+    <Compile Include="LedControlSystem\AnimationEventType.cs" />
+    <Compile Include="LedControlSystem\AnimationMaker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\AutoScrollPositionDelegate.cs" />
+    <Compile Include="LedControlSystem\ChangeSubareaSizeByEdgeHeight.cs" />
+    <Compile Include="LedControlSystem\CloudReviewGroupRecord.cs" />
+    <Compile Include="LedControlSystem\CloudReviewRecord.cs" />
+    <Compile Include="LedControlSystem\CloudServerUser.cs" />
+    <Compile Include="LedControlSystem\ColorfulBackground.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\DataGridViewProgressCell.cs" />
+    <Compile Include="LedControlSystem\DataGridViewProgressColumn.cs" />
+    <Compile Include="LedControlSystem\DataOperating.cs" />
+    <Compile Include="LedControlSystem\EdgeDisplay.cs" />
+    <Compile Include="LedControlSystem\ExecuteMode.cs" />
+    <Compile Include="LedControlSystem\formAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formAdvancedSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formAnimation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formAnimationMaker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formBackgroundEffectSelecter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formButtonFunctionConfiguration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formChangeAddress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formChangeWifiChannel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formChangeWifiPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formChangeWIFISSID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formCheckCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formCloudServerSend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formComTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formConnectToWIFI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formDataSource.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formDataSourceSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formDisplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formEditPublicText.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formEffectSelecter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formGetString.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formGPRSAdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formGPRSAdvancedSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formGprsSendAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formGPRS_ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formGPRS_CheckAdvancedPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formGPRS_Send.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formGPRS_UserDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formGridCellAndCol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formGroupSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formGroupSending.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formGroupSendingSingle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formInputString.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formLocalServerSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formLuminance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formMaterialEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formMultiLanguage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formPanelEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formPanelEditForForeignTrade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formPanelSelectForGroupSending.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formPanelSelectForItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formPanelStateQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formParameters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formPortTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formPublicUpdata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formReName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formRichtext.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formRouting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formSelectIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formSendData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formSendSingle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formSharedItemRename.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formSoftwareUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formStartAndClose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formStringLibrary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formStringTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formText.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formTimeSequence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formUSBUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formUSBWrite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formWifi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\formWifiFindInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\Form_find_device.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\Global.cs" />
+    <Compile Include="LedControlSystem\GprsAdministrator.cs" />
+    <Compile Include="LedControlSystem\GprsContentInfo.cs" />
+    <Compile Include="LedControlSystem\HotKey.cs" />
+    <Compile Include="LedControlSystem\LedSubareaDisplayHolder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\LedSubareaHolder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\LunarEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\MainDelegate.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplay.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplay130.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplay1300.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplay131.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplay132.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplay133.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayAnimation.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayExitBase.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage1.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage10.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage11.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage12.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage13.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage14.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage15.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage16.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage17.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage18.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage19.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage2.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage20.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage21.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage22.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage23.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage24.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage25.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage26.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage27.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage28.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage29.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage3.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage30.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage31.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage32.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage33.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage34.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage35.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage36.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage37.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage38.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage39.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage4.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage40.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage41.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage42.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage43.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage44.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage45.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage46.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage47.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage48.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage49.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage5.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage50.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage51.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage52.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage53.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage54.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage55.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage56.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage57.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage6.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage7.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage8.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPage9.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayPageBase.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayState.cs" />
+    <Compile Include="LedControlSystem\MarqueeDisplayTotal.cs" />
+    <Compile Include="LedControlSystem\MarqueeExistPage1.cs" />
+    <Compile Include="LedControlSystem\MarqueeExistPage10.cs" />
+    <Compile Include="LedControlSystem\MarqueeExistPage11.cs" />
+    <Compile Include="LedControlSystem\MarqueeExistPage12.cs" />
+    <Compile Include="LedControlSystem\MarqueeExistPage13.cs" />
+    <Compile Include="LedControlSystem\MarqueeExistPage14.cs" />
+    <Compile Include="LedControlSystem\MarqueeExistPage15.cs" />
+    <Compile Include="LedControlSystem\MarqueeExistPage16.cs" />
+    <Compile Include="LedControlSystem\MarqueeExistPage17.cs" />
+    <Compile Include="LedControlSystem\MarqueeExistPage18.cs" />
+    <Compile Include="LedControlSystem\MarqueeExistPage19.cs" />
+    <Compile Include="LedControlSystem\MarqueeExistPage2.cs" />
+    <Compile Include="LedControlSystem\MarqueeExistPage20.cs" />
+    <Compile Include="LedControlSystem\MarqueeExistPage21.cs" />
+    <Compile Include="LedControlSystem\MarqueeExistPage22.cs" />
+    <Compile Include="LedControlSystem\MarqueeExistPage23.cs" />
+    <Compile Include="LedControlSystem\MarqueeExistPage24.cs" />
+    <Compile Include="LedControlSystem\MarqueeExistPage25.cs" />
+    <Compile Include="LedControlSystem\MarqueeExistPage26.cs" />
+    <Compile Include="LedControlSystem\MarqueeExistPage27.cs" />
+    <Compile Include="LedControlSystem\MarqueeExistPage28.cs" />
+    <Compile Include="LedControlSystem\MarqueeExistPage29.cs" />
+    <Compile Include="LedControlSystem\MarqueeExistPage3.cs" />
+    <Compile Include="LedControlSystem\MarqueeExistPage30.cs" />
+    <Compile Include="LedControlSystem\MarqueeExistPage31.cs" />
+    <Compile Include="LedControlSystem\MarqueeExistPage32.cs" />
+    <Compile Include="LedControlSystem\MarqueeExistPage33.cs" />
+    <Compile Include="LedControlSystem\MarqueeExistPage34.cs" />
+    <Compile Include="LedControlSystem\MarqueeExistPage35.cs" />
+    <Compile Include="LedControlSystem\MarqueeExistPage36.cs" />
+    <Compile Include="LedControlSystem\MarqueeExistPage37.cs" />
+    <Compile Include="LedControlSystem\MarqueeExistPage38.cs" />
+    <Compile Include="LedControlSystem\MarqueeExistPage39.cs" />
+    <Compile Include="LedControlSystem\MarqueeExistPage4.cs" />
+    <Compile Include="LedControlSystem\MarqueeExistPage40.cs" />
+    <Compile Include="LedControlSystem\MarqueeExistPage41.cs" />
+    <Compile Include="LedControlSystem\MarqueeExistPage5.cs" />
+    <Compile Include="LedControlSystem\MarqueeExistPage6.cs" />
+    <Compile Include="LedControlSystem\MarqueeExistPage7.cs" />
+    <Compile Include="LedControlSystem\MarqueeExistPage8.cs" />
+    <Compile Include="LedControlSystem\MarqueeExistPage9.cs" />
+    <Compile Include="LedControlSystem\MyAxShockwaveFlash.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\Panel_Item_PublicText.cs" />
+    <Compile Include="LedControlSystem\PrintableRtf.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\Program.cs" />
+    <Compile Include="LedControlSystem\RegDomain.cs" />
+    <Compile Include="LedControlSystem\Register.cs" />
+    <Compile Include="LedControlSystem\RegValueKind.cs" />
+    <Compile Include="LedControlSystem\RoundFormPainter.cs" />
+    <Compile Include="LedControlSystem\RunMode.cs" />
+    <Compile Include="LedControlSystem\Screen_Display_Class.cs" />
+    <Compile Include="LedControlSystem\StringEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\TextEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\TreeViewEnhanced.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LedControlSystem\updateText.cs" />
+    <Compile Include="LedControlSystem\UpdateWeatherProvinceEvent.cs" />
+    <Compile Include="LedControlSystem\WeatherEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="System.Windows.Forms\MessageBoxManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="LedControlSystem\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formStart.resx">
+      <DependentUpon>formStart.cs</DependentUpon>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>formStart.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IpInputExt.Ctrls\IpInputTextbox.resx">
+      <DependentUpon>IpInputTextbox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem.CloudServer\formCloudCardParameter.resx">
+      <DependentUpon>formCloudCardParameter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem.CloudServer\formCloudServerAdminLogin.resx">
+      <DependentUpon>formCloudServerAdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem.CloudServer\formCloudServerGroupInfo.resx">
+      <DependentUpon>formCloudServerGroupInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem.CloudServer\formLoginUser.resx">
+      <DependentUpon>formLoginUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem.Cloud\formCloudForgotPassword.resx">
+      <DependentUpon>formCloudForgotPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem.Cloud\formCloudGroup.resx">
+      <DependentUpon>formCloudGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem.Cloud\formCloudGroupSending.resx">
+      <DependentUpon>formCloudGroupSending.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem.Cloud\formCloudGroupSendingSingle.resx">
+      <DependentUpon>formCloudGroupSendingSingle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem.Cloud\formCloudLogin.resx">
+      <DependentUpon>formCloudLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem.Cloud\formCloudManagement.resx">
+      <DependentUpon>formCloudManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem.Cloud\formCloudQueryReview.resx">
+      <DependentUpon>formCloudQueryReview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem.Cloud\formCloudRegister.resx">
+      <DependentUpon>formCloudRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem.Cloud\formCloudSendData.resx">
+      <DependentUpon>formCloudSendData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem.Cloud\formCloudSendSingle.resx">
+      <DependentUpon>formCloudSendSingle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem.Cloud\formCloudTerminalParameter.resx">
+      <DependentUpon>formCloudTerminalParameter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem.Cloud\formCloudUser.resx">
+      <DependentUpon>formCloudUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources1.resx">
+      <DependentUpon>Resources1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\AnimationEditor.resx">
+      <DependentUpon>AnimationEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\AnimationEffect.resx">
+      <DependentUpon>AnimationEffect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\AnimationMaker.resx">
+      <DependentUpon>AnimationMaker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\ColorfulBackground.resx">
+      <DependentUpon>ColorfulBackground.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formAbout.resx">
+      <DependentUpon>formAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formAdvancedSettings.resx">
+      <DependentUpon>formAdvancedSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formAnimation.resx">
+      <DependentUpon>formAnimation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formAnimationMaker.resx">
+      <DependentUpon>formAnimationMaker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formBackgroundEffectSelecter.resx">
+      <DependentUpon>formBackgroundEffectSelecter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formButtonFunctionConfiguration.resx">
+      <DependentUpon>formButtonFunctionConfiguration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formChangeAddress.resx">
+      <DependentUpon>formChangeAddress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formChangeWifiChannel.resx">
+      <DependentUpon>formChangeWifiChannel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formChangeWIFISSID.resx">
+      <DependentUpon>formChangeWIFISSID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formCheckCode.resx">
+      <DependentUpon>formCheckCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formCloudServerSend.resx">
+      <DependentUpon>formCloudServerSend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formComTest.resx">
+      <DependentUpon>formComTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formConnectToWIFI.resx">
+      <DependentUpon>formConnectToWIFI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formDataSource.resx">
+      <DependentUpon>formDataSource.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formDataSourceSetting.resx">
+      <DependentUpon>formDataSourceSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formDisplay.resx">
+      <DependentUpon>formDisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formEditPublicText.resx">
+      <DependentUpon>formEditPublicText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formEffectSelecter.resx">
+      <DependentUpon>formEffectSelecter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formGetString.resx">
+      <DependentUpon>formGetString.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formGPRSAdminLogin.resx">
+      <DependentUpon>formGPRSAdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formGPRSAdvancedSettings.resx">
+      <DependentUpon>formGPRSAdvancedSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formGprsSendAll.resx">
+      <DependentUpon>formGprsSendAll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formGPRS_ChangePassword.resx">
+      <DependentUpon>formGPRS_ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formGPRS_CheckAdvancedPassword.resx">
+      <DependentUpon>formGPRS_CheckAdvancedPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formGPRS_Send.resx">
+      <DependentUpon>formGPRS_Send.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formGPRS_UserDetail.resx">
+      <DependentUpon>formGPRS_UserDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formGrid.resx">
+      <DependentUpon>formGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formGridCellAndCol.resx">
+      <DependentUpon>formGridCellAndCol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formGroup.resx">
+      <DependentUpon>formGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formGroupSelect.resx">
+      <DependentUpon>formGroupSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formGroupSending.resx">
+      <DependentUpon>formGroupSending.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formGroupSendingSingle.resx">
+      <DependentUpon>formGroupSendingSingle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formInputString.resx">
+      <DependentUpon>formInputString.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formLocalServerSetting.resx">
+      <DependentUpon>formLocalServerSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formLuminance.resx">
+      <DependentUpon>formLuminance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formMain.resx">
+      <DependentUpon>formMain.cs</DependentUpon>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>formMain.Designer.cs</LastGenOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formMaterialEdit.resx">
+      <DependentUpon>formMaterialEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formMultiLanguage.resx">
+      <DependentUpon>formMultiLanguage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formPanelEdit.resx">
+      <DependentUpon>formPanelEdit.cs</DependentUpon>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>formPanelEdit.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formPanelEditForForeignTrade.resx">
+      <DependentUpon>formPanelEditForForeignTrade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formPanelSelectForGroupSending.resx">
+      <DependentUpon>formPanelSelectForGroupSending.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formPanelSelectForItem.resx">
+      <DependentUpon>formPanelSelectForItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formPanelStateQuery.resx">
+      <DependentUpon>formPanelStateQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formParameters.resx">
+      <DependentUpon>formParameters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formPortTest.resx">
+      <DependentUpon>formPortTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formPublicUpdata.resx">
+      <DependentUpon>formPublicUpdata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formReName.resx">
+      <DependentUpon>formReName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formRichtext.resx">
+      <DependentUpon>formRichtext.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formRouting.resx">
+      <DependentUpon>formRouting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formSelectIndex.resx">
+      <DependentUpon>formSelectIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formSendData.resx">
+      <DependentUpon>formSendData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formSendSingle.resx">
+      <DependentUpon>formSendSingle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formSharedItemRename.resx">
+      <DependentUpon>formSharedItemRename.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formSoftwareUpdate.resx">
+      <DependentUpon>formSoftwareUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formStartAndClose.resx">
+      <DependentUpon>formStartAndClose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formStringLibrary.resx">
+      <DependentUpon>formStringLibrary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formStringTest.resx">
+      <DependentUpon>formStringTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formText.resx">
+      <DependentUpon>formText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formTimeSequence.resx">
+      <DependentUpon>formTimeSequence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formUSBUpdate.resx">
+      <DependentUpon>formUSBUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formUSBWrite.resx">
+      <DependentUpon>formUSBWrite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formWifi.resx">
+      <DependentUpon>formWifi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\formWifiFindInfo.resx">
+      <DependentUpon>formWifiFindInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\Form_find_device.resx">
+      <DependentUpon>Form_find_device.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\LedSubareaDisplayHolder.resx">
+      <DependentUpon>LedSubareaDisplayHolder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\LedSubareaHolder.resx">
+      <DependentUpon>LedSubareaHolder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\LunarEditor.resx">
+      <DependentUpon>LunarEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\StringEditor.resx">
+      <DependentUpon>StringEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\TextEditor.resx">
+      <DependentUpon>TextEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LedControlSystem\WeatherEditor.resx">
+      <DependentUpon>WeatherEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\this.backgroundimage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\%24this.BackgroundImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="FlashAccessibility">
+      <Guid>{57A0E746-3863-4D20-A811-950C84F1DB9B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="ShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start_cn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picLogo.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dialElementLeft.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="HelloRemoting\HelloRemoting.csproj">
+      <Project>{d4dd85bd-a8e4-4c72-b5f1-0fb290f074d6}</Project>
+      <Name>HelloRemoting</Name>
+    </ProjectReference>
+    <ProjectReference Include="server_interface\server_interface.csproj">
+      <Project>{ed5a1641-9051-4232-b6bd-a39776c1cccc}</Project>
+      <Name>server_interface</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\%24this.Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tsbtnAlignCenter.Image.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
