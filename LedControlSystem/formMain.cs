@@ -9896,7 +9896,10 @@ namespace LedControlSystem.LedControlSystem
 				}
 			}
 			formSendData formSendData = new formSendData(this.isUpdataCode, this.isDownloadStringLibrary, this);
-			formSendData.ShowOK = pOK;
+
+            formSendData.ShowOK = false;
+
+            //formSendData.ShowOK = pOK;
 			this.isUpdataCode = false;
 			this.isDownloadStringLibrary = false;
 			formSendData.ShowDialog(ownerForm);
