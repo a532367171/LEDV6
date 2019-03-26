@@ -1,0 +1,1014 @@
+﻿/ ****
+MODEL: ZH-A1
+
+1. Maximum Points: 49152 (color area halved)
+    Monochrome: 16 * 3072    32 * 1536
+                48 * 1024
+         Color: 16 * 1536    32 * 768
+2. Support for all scanning
+3. Support 16 free partition
+4. Support for full screen and run side by side partitions run
+5. Support full screen dynamic background and dynamic background by district
+6. Support N kinds of cool text animation
+7. Supports serial communication mode
+8. Supports serial program upgrade
+9. RS-232 communication line is straight line
+  Connection follows
+        PC ---- Device
+         2 ---- 2
+         3 ---- 3
+         5 ---- 5
+/ ****
+MODEL: ZH-A4
+
+1. Maximum Points: 65536 (color area halved)
+    Monochrome: 16 * 4096     32 * 2048
+                48 * 1360     64 * 1024
+         Color: 16 * 2048     32 * 1024
+                48 * 680      64 * 512
+2. Support for all scanning
+3. Support 16 free partition
+4. Support for full screen and run side by side partitions run
+5. Support full screen dynamic background and dynamic background by district
+6. Support N kinds of cool text animation
+7. Supports serial communication mode
+8. Supports serial program upgrade
+9. RS-232 communication line is straight line
+  Connection follows
+        PC ---- Device
+         2 ---- 2
+         3 ---- 3
+         5 ---- 5
+/ ****
+MODEL: ZH-Un
+
+1. Maximum Points: 10240 (color area halved)
+    Monochrome: 16 * 640    32 * 320
+         Color: 16 * 320    32 * 160
+2. Support for all scanning
+3. Support 4 free partition
+4. Support for full screen and run side by side partitions run
+5. Support full screen dynamic background and dynamic background by district
+6. Support N kinds of cool text animation
+7. U disk support communication mode
+8. U disk support program upgrade
+9. Support for all U disk storage format FAT32 / EXFAT
+
+/ ****
+MODEL: ZH-Um
+
+1. Maximum Points: 16384 (color area halved)
+    Monochrome: 16 * 1024    32 * 512
+         Color: 16 * 512     32 * 256
+2. Support for all scanning
+3. Support 16 free partition
+4. Support for full screen and run side by side partitions run
+5. Support full screen dynamic background and dynamic background by district
+6. Support N kinds of cool text animation
+7. U disk support communication mode
+8. U disk support program upgrade
+9. Support for all U disk storage format FAT32 / EXFAT
+
+/ ****
+MODEL: ZH-Uc
+
+1. Maximum Points: 24576 (color area halved)
+    Monochrome: 16 * 1536    32 * 768
+                48 * 512
+         Color: 16 * 768     32 * 384
+                48 * 256
+2. Support for all scanning
+3. Support 16 free partition
+4. Support for full screen and run side by side partitions run
+5. Support full screen dynamic background and dynamic background by district
+6. Support N kinds of cool text animation
+7. U disk support communication mode
+8. U disk support program upgrade
+9. Support for all U disk storage format FAT32 / EXFAT
+
+/ ****
+MODEL: ZH-U0
+
+1. Maximum Points: 32768 (color area halved)
+    Monochrome: 16 * 2048    32 * 1024
+         Color: 16 * 1024    32 * 512
+2. Support for all scanning
+3. Support 16 free partition
+4. Support for full screen and run side by side partitions run
+5. Support full screen dynamic background and dynamic background by district
+6. Support N kinds of cool text animation
+7. Support U disk and dual serial communication mode
+8. U disk support program upgrade
+9. Support for all U disk storage format FAT32 / EXFAT
+10. RS-232 communication line is straight line
+  Connection follows
+        PC ---- Device
+         2 ---- 2
+         3 ---- 3
+         5 ---- 5
+/ ****
+MODEL: ZH-U1
+
+1. Maximum Points: 49152 (color area halved)
+    Monochrome: 16 * 3072    32 * 1536
+                48 * 1024
+         Color: 16 * 1536    32 * 768
+                48 * 512
+2. Support for all scanning
+3. Support 16 free partition
+4. Support for full screen and run side by side partitions run
+5. Support full screen dynamic background and dynamic background by district
+6. Support N kinds of cool text animation
+7. Support U disk and dual serial communication mode
+8. U disk support program upgrade
+9. Support for all U disk storage format FAT32 / EXFAT
+10. RS-232 communication line is straight line
+  Connection follows
+        PC ---- Device
+         2 ---- 2
+         3 ---- 3
+         5 ---- 5
+/ ****
+MODEL: ZH-UF
+
+1. Maximum Points: 32768 (color area halved)
+    Monochrome: 16 * 2048    32 * 1024
+                48 * 680     64 * 512
+         Color: 16 * 1024    32 * 512
+                48 * 336     64 * 256
+2. Support for all scanning
+3. Support 16 free partition
+4. Support for full screen and run side by side partitions run
+5. Support full screen dynamic background and dynamic background by district
+6. Support N kinds of cool text animation
+7. Support U disk and dual serial communication mode
+8. U disk support program upgrade
+9. Support for all U disk storage format FAT32 / EXFAT
+10. RS-232 communication line is straight line
+  Connection follows
+        PC ---- Device
+         2 ---- 2
+         3 ---- 3
+         5 ---- 5
+/ ****
+MODEL: ZH-U2
+
+1. Maximum Points: 65536 (color area halved)
+    Monochrome: 16 * 4096    32 * 2048
+                48 * 1360    64 * 1024
+         Color: 16 * 2048    32 * 1024
+                48 * 680     64 * 512
+2. Support for all scanning
+3. Support 16 free partition
+4. Support for full screen and run side by side partitions run
+5. Support full screen dynamic background and dynamic background by district
+6. Support N kinds of cool text animation
+7. Support U disk and dual serial communication mode
+8. U disk support program upgrade
+9. Support for all U disk storage format FAT32 / EXFAT
+10. RS-232 communication line is straight line
+  Connection follows
+        PC ---- Device
+         2 ---- 2
+         3 ---- 3
+         5 ---- 5
+/ ****
+MODEL: ZH-U3
+
+1. Maximum Points: 65536 (color area halved)
+    Monochrome:  16 * 4096    32 * 2048
+                 48 * 1360    64 * 1024
+                 80 * 816     96 * 680
+                128 * 512
+         Color:  16 * 2048    32 * 1024
+                 48 * 680     64 * 512
+                 80 * 408     96 * 336
+                128 * 256
+2. Support for all scanning
+3. Support 16 free partition
+4. Support for full screen and run side by side partitions run
+5. Support full screen dynamic background and dynamic background by district
+6. Support N kinds of cool text animation
+7. Support U disk and dual serial communication mode
+8. U disk support program upgrade
+9. Support for all U disk storage format FAT32 / EXFAT
+10. RS-232 communication line is straight line
+  Connection follows
+         PC ---- Device
+         2 ---- 2
+         3 ---- 3
+         5 ---- 5
+/ ****
+MODEL: ZH-U4
+
+1. Maximum Points: 102400 (color area halved)
+    Monochrome:  16 * 4096    32 * 3200
+                 48 * 2128    64 * 1600
+                 80 * 1280    96 * 1064
+                128 * 800
+         Color:  16 * 3200    32 * 1600
+                 48 * 1064    64 * 800
+                 80 * 640     96 * 528
+                128 * 400
+2. Support for all scanning
+3. Support 16 free partition
+4. Support for full screen and run side by side partitions run
+5. Support full screen dynamic background and dynamic background by district
+6. Support N kinds of cool text animation
+7. Support U disk and dual serial communication mode
+8. U disk support program upgrade
+9. Support for all U disk storage format FAT32 / EXFAT
+10. RS-232 communication line is straight line
+  Connection follows
+        PC ---- Device
+         2 ---- 2
+         3 ---- 3
+         5 ---- 5
+/ ****
+MODEL: ZH-U5
+
+1. Maximum Points: 163,840 (color area halved)
+    Monochrome:  16 * 4096     32 * 4096     48 * 3408     64 * 2560
+                 80 * 2048     96 * 1704    128 * 1280    144 * 1136
+                160 * 1024    176 * 928     192 * 848     208 * 784
+                224 * 728     240 * 680     256 * 640
+         Color:  16 * 4096     32 * 2048     48 * 1696     64 * 1280
+                 80 * 1024     96 * 848     128 * 640
+
+2. Support for all scanning
+3. Support 16 free partition
+4. Support for full screen and run side by side partitions run
+5. Support full screen dynamic background and dynamic background by district
+6. Support N kinds of cool text animation
+7. Support U disk and dual serial communication mode
+8. U disk support program upgrade
+9. Support for all U disk storage format FAT32 / EXFAT
+10. RS-232 communication line is straight line
+  Connection follows
+        PC ---- Device
+         2 ---- 2
+         3 ---- 3
+         5 ---- 5
+/ ****
+MODEL: ZH-U6
+
+1. Maximum Points: 524288 (color area halved)
+    Monochrome:  32 * 4096     64 * 4096     96 * 4096    128 * 4096
+                144 * 3640    160 * 3272    176 * 2976    192 * 2728
+                208 * 2520    224 * 2336    240 * 2184    256 * 2048
+         Color:  32 * 4096     64 * 4096     96 * 2728    128 * 2048
+                144 * 1816    160 * 1632    176 * 1488    192 * 1360
+                208 * 1256    224 * 1168    240 * 1088    256 * 1024
+2. Support for all scanning
+3. Support 16 free partition
+4. Support for full screen and run side by side partitions run
+5. Support full screen dynamic background and dynamic background by district
+6. Support N kinds of cool text animation
+7. Support U disk and dual serial communication mode
+8. U disk support program upgrade
+9. Support for all U disk storage format FAT32 / EXFAT
+10. RS-232 communication line is straight line
+  Connection follows
+        PC ---- Device
+         2 ---- 2
+         3 ---- 3
+         5 ---- 5
+/ ****
+MODEL: ZH-U7
+
+1. Maximum Points: 524288 (color area halved)
+    Monochrome:  32 * 4096     64 * 4096     96 * 4096    128 * 4096
+                160 * 3272    192 * 2728    224 * 2336    256 * 2048
+                288 * 1816    320 * 1632    352 * 1488    384 * 1360
+                416 * 1256    448 * 1168    480 * 1088    512 * 1024
+         Color:  32 * 4096     64 * 4096     96 * 2728    128 * 2048
+                160 * 1632    192 * 1360    224 * 1168    256 * 1024
+                288 * 904     320 * 816     352 * 744     384 * 680
+                416 * 624     448 * 584     480 * 544     512 * 512
+2. Support for all scanning
+3. Support 16 free partition
+4. Support for full screen and run side by side partitions run
+5. Support full screen dynamic background and dynamic background by district
+6. Support N kinds of cool text animation
+7. Support U disk and dual serial communication mode
+8. U disk support program upgrade
+9. Support for all U disk storage format FAT32 / EXFAT
+10. RS-232 communication line is straight line
+  Connection follows
+        PC ---- Device
+         2 ---- 2
+         3 ---- 3
+         5 ---- 5
+/ ****
+MODEL: ZH-U8
+
+1. Maximum Points: 1048576 (color area halved)
+    Monochrome:  32 * 8192     64 * 8192     96 * 8192    128 * 8192
+                160 * 6552    192 * 5456    208 * 5040    224 * 4680
+                240 * 4368    256 * 4096    288 * 3640    320 * 3272
+                352 * 2976    384 * 2728    416 * 2520    448 * 2336
+                480 * 2184    512 * 2048
+         Color:  32 * 8192     64 * 8192     96 * 5456    128 * 4096
+                160 * 3272    192 * 2728    224 * 2336    256 * 2048
+                288 * 1816    320 * 1632    352 * 1488    384 * 1360
+                416 * 1256    448 * 1168    480 * 1088    512 * 1024
+2. Support for all scanning
+3. Support 16 free partition
+4. Support for full screen and run side by side partitions run
+5. Support full screen dynamic background and dynamic background by district
+6. Support N kinds of cool text animation
+7. Support U disk and dual serial communication mode
+8. U disk support program upgrade
+9. Support for all U disk storage format FAT32 / EXFAT
+10. RS-232 communication line is straight line
+  Connection follows
+        PC ---- Device
+         2 ---- 2
+         3 ---- 3
+         5 ---- 5
+/ ****
+MODEL: ZH-E1L
+
+1. Maximum Points: 49152 (color area halved)
+    Monochrome: 16 * 3072    32 * 1536
+                48 * 1024
+         Color: 16 * 1536    32 * 768
+                48 * 512
+2. Support for all scanning
+3. Support 16 free partition
+4. Support for full screen and run side by side partitions run
+5. Support full screen dynamic background and dynamic background by district
+6. Support N kinds of cool text animation
+7. U disk support, Ethernet port and three serial communication mode
+8. automatically obtain IP, IP settings without
+9. Support single direct connection and LAN communications
+10. The network interface is fully compatible direct line of communication and cross-line
+11. RS-232 serial communication for direct line
+  Connection follows
+        PC ---- Device
+         2 ---- 2
+         3 ---- 3
+         5 ---- 5
+/ ****
+MODEL: ZH-E3L
+
+1. Maximum Points: 65536 (color area halved)
+    Monochrome:  16 * 4096    32 * 2048
+                 48 * 1360    64 * 1024
+                 80 * 816     96 * 680
+                128 * 512
+         Color:  16 * 2048    32 * 1024
+                 48 * 680     64 * 512
+                 80 * 408     96 * 336
+                128 * 256
+2. Support for all scanning
+3. Support 16 free partition
+4. Support for full screen and run side by side partitions run
+5. Support full screen dynamic background and dynamic background by district
+6. Support N kinds of cool text animation
+7. U disk support, Ethernet port and three serial communication mode
+8. automatically obtain IP, IP settings without
+9. Support single direct connection and LAN communications
+10. The network interface is fully compatible direct line of communication and cross-line
+11. RS-232 serial communication for direct line
+  Connection follows
+        PC ---- Device
+         2 ---- 2
+         3 ---- 3
+         5 ---- 5
+/ ****
+MODEL: ZH-E5L
+
+1. Maximum Points: 163,840 (color area halved)
+    Monochrome:  16 * 4096     32 * 4096     48 * 3408     64 * 2560
+                 80 * 2048     96 * 1704    128 * 1280    144 * 1136
+                160 * 1024    176 * 928     192 * 848     208 * 784
+                224 * 728     240 * 680     256 * 640
+         Color:  16 * 4096     32 * 2048     48 * 1696     64 * 1280
+                 80 * 1024     96 * 848     128 * 640
+     
+2. Support for all scanning
+3. Support 16 free partition
+4. Support for full screen and run side by side partitions run
+5. Support full screen dynamic background and dynamic background by district
+6. Support N kinds of cool text animation
+7. U disk support, Ethernet port and three serial communication mode
+8. automatically obtain IP, IP settings without
+9. Support single direct connection and LAN communications
+10. The network interface is fully compatible direct line of communication and cross-line
+11. RS-232 serial communication for direct line
+  Connection follows
+        PC ---- Device
+         2 ---- 2
+         3 ---- 3
+         5 ---- 5
+/ ****
+MODEL: ZH-E6L
+
+1. Maximum Points: 524288 (color area halved)
+    Monochrome:  32 * 4096     64 * 4096     96 * 4096    128 * 4096
+                144 * 3640    160 * 3272    176 * 2976    192 * 2728
+                208 * 2520    224 * 2336    240 * 2184    256 * 2048
+         Color:  32 * 4096     64 * 4096     96 * 2728    128 * 2048
+                144 * 1816    160 * 1632    176 * 1488    192 * 1360
+                208 * 1256    224 * 1168    240 * 1088    256 * 1024
+2. Support for all scanning
+3. Support 16 free partition
+4. Support for full screen and run side by side partitions run
+5. Support full screen dynamic background and dynamic background by district
+6. Support N kinds of cool text animation
+7. U disk support, Ethernet port and three serial communication mode
+8. automatically obtain IP, IP settings without
+9. Support single direct connection and LAN communications
+10. The network interface is fully compatible direct line of communication and cross-line
+11. RS-232 serial communication for direct line
+  Connection follows
+        PC ---- Device
+         2 ---- 2
+         3 ---- 3
+         5 ---- 5
+/ ****
+MODEL: ZH-E7L
+
+1. Maximum Points: 524288 (color area halved)
+    Monochrome:  32 * 4096     64 * 4096     96 * 4096    128 * 4096
+                160 * 3272    192 * 2728    224 * 2336    256 * 2048
+                288 * 1816    320 * 1632    352 * 1488    384 * 1360
+                416 * 1256    448 * 1168    480 * 1088    512 * 1024
+         Color:  32 * 4096     64 * 4096     96 * 2728    128 * 2048
+                160 * 1632    192 * 1360    224 * 1168    256 * 1024
+                288 * 904     320 * 816     352 * 744     384 * 680
+                416 * 624     448 * 584     480 * 544     512 * 512
+2. Support for all scanning
+3. Support 16 free partition
+4. Support for full screen and run side by side partitions run
+5. Support full screen dynamic background and dynamic background by district
+6. Support N kinds of cool text animation
+7. U disk support, Ethernet port and three serial communication mode
+8. automatically obtain IP, IP settings without
+9. Support single direct connection and LAN communications
+10. The network interface is fully compatible direct line of communication and cross-line
+11. RS-232 serial communication for direct line
+  Connection follows
+        PC ---- Device
+         2 ---- 2
+         3 ---- 3
+         5 ---- 5
+/ ****
+MODEL: ZH-E8L
+
+1. Maximum Points: 1048576 (color area halved)
+    Monochrome:  32 * 8192     64 * 8192     96 * 8192    128 * 8192
+                160 * 6552    192 * 5456    208 * 5040    224 * 4680
+                240 * 4368    256 * 4096    288 * 3640    320 * 3272
+                352 * 2976    384 * 2728    416 * 2520    448 * 2336
+                480 * 2184    512 * 2048
+         Color:  32 * 8192     64 * 8192     96 * 5456    128 * 4096
+                160 * 3272    192 * 2728    224 * 2336    256 * 2048
+                288 * 1816    320 * 1632    352 * 1488    384 * 1360
+                416 * 1256    448 * 1168    480 * 1088    512 * 1024
+2. Support for all scanning
+3. Support 16 free partition
+4. Support for full screen and run side by side partitions run
+5. Support full screen dynamic background and dynamic background by district
+6. Support N kinds of cool text animation
+7. U disk support, Ethernet port and three serial communication mode
+8. automatically obtain IP, IP settings without
+9. Support single direct connection and LAN communications
+10. The network interface is fully compatible direct line of communication and cross-line
+11. RS-232 serial communication for direct line
+  Connection follows
+        PC ---- Device
+         2 ---- 2
+         3 ---- 3
+         5 ---- 5
+/ ****
+MODEL: ZH-Gm
+
+1. Maximum Points: 16384 (color area halved)
+    Monochrome: 16 * 1024    32 * 512
+         Color: 32 * 256
+2. Support 1 / 4,1 / 8,1 / 16 scan
+3. Support free partition
+4. Support magical run edge (full screen / partition)
+5. Support the countdown, temperature
+6. Communication Interface: GPRS RS-232 U disk
+7. U disk storage format supports all FAT32 / EXFAT
+8. U disk support program upgrade
+9. Timer switch support
+10. Full screen test support
+11. RS-232 communication line is straight line
+  Connection follows
+        PC ---- Device
+         2 ---- 2
+         3 ---- 3
+         5 ---- 5
+/ ****
+MODEL: ZH-G0
+
+1. Maximum Points: 32768 (color area halved)
+    Monochrome: 16 * 2048    32 * 1024
+         Color: 16 * 1024    32 * 512
+2. Support 1 / 4,1 / 8,1 / 16 scan
+3. Support free partition
+4. Support magical run edge (full screen / partition)
+5. Support the countdown, temperature
+6. Communication Interface: GPRS RS-232 U disk
+7. U disk storage format supports all FAT32 / EXFAT
+8. U disk support program upgrade
+9. Timer switch support
+10. Full screen test support
+11. RS-232 communication line is straight line
+  Connection follows
+        PC ---- Device
+         2 ---- 2
+         3 ---- 3
+         5 ---- 5
+/ ****
+MODEL: ZH-G2
+
+1. Maximum Points: 65536 (color area halved)
+    Monochrome: 16 * 4096    32 * 2048
+                48 * 1360    64 * 1024
+         Color: 16 * 2048    32 * 1024
+                48 * 680     64 * 512
+2. Support 1 / 4,1 / 8,1 / 16 scan
+3. Support free partition
+4. Support magical run edge (full screen / partition)
+5. Support the countdown, temperature
+6. Communication Interface: GPRS RS-232 U disk
+7. U disk storage format supports all FAT32 / EXFAT
+8. U disk support program upgrade
+9. Timer switch support
+10. Full screen test support
+11. RS-232 communication line is straight line
+  Connection follows
+        PC ---- Device
+         2 ---- 2
+         3 ---- 3
+         5 ---- 5
+/ ****
+MODEL: ZH-G3
+
+1. Maximum Points: 65536 (color area halved)
+    Monochrome:  16 * 4096    32 * 2048
+                 48 * 1360    64 * 1024
+                 80 * 816     96 * 680
+                128 * 512
+         Color:  16 * 2048    32 * 1024
+                 48 * 680     64 * 512
+                 80 * 408     96 * 336
+                128 * 256
+2. Support 1 / 4,1 / 8,1 / 16 scan
+3. Support free partition
+4. Support magical run edge (full screen / partition)
+5. Support the countdown, temperature
+6. Communication Interface: GPRS RS-232 U disk
+7. U disk storage format supports all FAT32 / EXFAT
+8. U disk support program upgrade
+9. Timer switch support
+10. Full screen test support
+11. RS-232 communication line is straight line
+  Connection follows
+        PC ---- Device
+         2 ---- 2
+         3 ---- 3
+         5 ---- 5
+/ ****
+MODEL: ZH-G4
+
+1. Maximum Points: 144,384 (color area halved)
+    Monochrome: 16 * 4096    32 * 4096     48 * 3008    64 * 2560
+                80 * 2048    96 * 1704    128 * 1280
+         Color: 16 * 4096    32 * 2048     48 * 1696    64 * 1280
+                80 * 1024    96 * 848     128 * 640
+2. Support 1 / 4,1 / 8,1 / 16 scan
+3. Support free partition
+4. Support magical run edge (full screen / partition)
+5. Support the countdown, temperature
+6. Communication Interface: GPRS RS-232 U disk
+7. U disk storage format supports all FAT32 / EXFAT
+8. U disk support program upgrade
+9. Timer switch support
+10. Full screen test support
+11. RS-232 communication line is straight line
+  Connection follows
+        PC ---- Device
+         2 ---- 2
+         3 ---- 3
+         5 ---- 5
+
+/ ****
+Model: ZH-G7
+
+1. Maximum Points: 524288 (color area halved)
+    Monochrome:  32 * 4096     64 * 4096     96 * 4096    128 * 4096
+                160 * 3272    192 * 2728    224 * 2336    256 * 2048
+                288 * 1816    320 * 1632    352 * 1488    384 * 1360
+                416 * 1256    448 * 1168    480 * 1088    512 * 1024
+         Color:  32 * 4096     64 * 4096     96 * 2728    128 * 2048
+                160 * 1632    192 * 1360    224 * 1168    256 * 1024
+                288 * 904     320 * 816     352 * 744     384 * 680
+                416 * 624     448 * 584     480 * 544     512 * 512
+2. Support 1 / 4,1 / 8,1 / 16 scan
+3. Support free partition
+4. Support magical run edge (full screen / partition)
+5. Support the countdown, temperature
+6. Communication Interface: GPRS RS-232 U disk
+7. U disk storage format supports all FAT32 / EXFAT
+8. U disk support program upgrade
+9. Timer switch support
+10. Full screen test support
+
+/ ****
+MODEL: ZH-Wc
+
+1. Maximum Points: 24576 (color area halved)
+    Monochrome: 16 * 1536    32 * 768
+                48 * 512
+         Color: 16 * 768     32 * 384
+                48 * 256
+2. Support for all scanning
+3. Support 16 free partition
+4. Support for full screen and run side by side partitions run
+5. Support full screen dynamic background and dynamic background by district
+6. Support N kinds of cool text animation
+7. U disk support and WiFi dual mode of communication
+8. U disk support and WiFi program upgrade
+9. automatically obtain IP, IP settings without
+10. Supports all U disk storage format FAT32 / EXFAT
+
+/ ****
+MODEL: ZH-WF
+
+1. Maximum Points: 32768 (color area halved)
+    Monochrome: 16 * 2048    32 * 1024
+                48 * 680     64 * 512
+         Color: 16 * 1024    32 * 512
+                48 * 336     64 * 256
+2. Support for all scanning
+3. Support 16 free partition
+4. Support for full screen and run side by side partitions run
+5. Support full screen dynamic background and dynamic background by district
+6. Support N kinds of cool text animation
+7. U disk support and WiFi dual mode of communication
+8. U disk support and WiFi program upgrade
+9. automatically obtain IP, IP settings without
+10. Supports all U disk storage format FAT32 / EXFAT
+
+/ ****
+MODEL: ZH-Wn
+
+1. Maximum Points: 10240 (color area halved)
+    Monochrome: 16 * 640    32 * 320
+         Color: 16 * 320    32 * 160
+2. Support for all scanning
+3. Support 16 free partition
+4. Support for full screen and run side by side partitions run
+5. Support full screen dynamic background and dynamic background by district
+6. Support N kinds of cool text animation
+7. U disk support and WiFi dual mode of communication
+8. U disk support and WiFi program upgrade
+9. automatically obtain IP, IP settings without
+10. Supports all U disk storage format FAT32 / EXFAT
+
+/ ****
+MODEL: ZH-Wm
+
+1. Maximum Points: 16384 (color area halved)
+    Monochrome: 16 * 1024    32 * 512
+         Color: 16 * 512     32 * 256
+2. Support for all scanning
+3. Support 16 free partition
+4. Support for full screen and run side by side partitions run
+5. Support full screen dynamic background and dynamic background by district
+6. Support N kinds of cool text animation
+7. U disk support and WiFi dual mode of communication
+8. U disk support and WiFi program upgrade
+9. automatically obtain IP, IP settings without
+10. Supports all U disk storage format FAT32 / EXFAT
+
+/ ****
+MODEL: ZH-W0
+
+1. Maximum Points: 32768 (color area halved)
+    Monochrome: 16 * 2048    32 * 1024
+         Color: 16 * 1024    32 * 512
+2. Support for all scanning
+3. Support 16 free partition
+4. Support for full screen and run side by side partitions run
+5. Support full screen dynamic background and dynamic background by district
+6. Support N kinds of cool text animation
+7. U disk support and WiFi dual mode of communication
+8. U disk support and WiFi program upgrade
+9. automatically obtain IP, IP settings without
+10. Supports all U disk storage format FAT32 / EXFAT
+
+/ ****
+MODEL: ZH-W1
+
+1. Maximum Points: 49152 (color area halved)
+    Monochrome: 16 * 3072    32 * 1536
+                48 * 1024
+         Color: 16 * 1536    32 * 768
+                48 * 512
+2. Support for all scanning
+3. Support 16 free partition
+4. Support for full screen and run side by side partitions run
+5. Support full screen dynamic background and dynamic background by district
+6. Support N kinds of cool text animation
+7. U disk support and WiFi dual mode of communication
+8. U disk support and WiFi program upgrade
+9. automatically obtain IP, IP settings without
+10. Supports all U disk storage format FAT32 / EXFAT
+
+/ ****
+MODEL: ZH-W2
+
+1. Maximum Points: 65536 (color area halved)
+    Monochrome: 16 * 4096    32 * 2048
+                48 * 1360    64 * 1024
+         Color: 16 * 2048    32 * 1024
+                48 * 680     64 * 512
+2. Support for all scanning
+3. Support 16 free partition
+4. Support for full screen and run side by side partitions run
+5. Support full screen dynamic background and dynamic background by district
+6. Support N kinds of cool text animation
+7. U disk support and WiFi dual mode of communication
+8. U disk support and WiFi program upgrade
+9. automatically obtain IP, IP settings without
+10. Supports all U disk storage format FAT32 / EXFAT
+
+/ ****
+MODEL: ZH-W3
+
+1. Maximum Points: 65536 (color area halved)
+    Monochrome:  16 * 4096    32 * 2048
+                 48 * 1360    64 * 1024
+                 80 * 816     96 * 680
+                128 * 512
+         Color:  16 * 2048    32 * 1024
+                 48 * 680     64 * 512
+                 80 * 408     96 * 336
+                128 * 256
+2. Support for all scanning
+3. Support 16 free partition
+4. Support for full screen and run side by side partitions run
+5. Support full screen dynamic background and dynamic background by district
+6. Support N kinds of cool text animation
+7. U disk support and WiFi dual mode of communication
+8. U disk support and WiFi program upgrade
+9. automatically obtain IP, IP settings without
+10. Supports all U disk storage format FAT32 / EXFAT
+
+/ ****
+MODEL: ZH-W4
+
+1. Maximum Points: 102400 (color area halved)
+    Monochrome:  16 * 4096    32 * 3200
+                 48 * 2128    64 * 1600
+                 80 * 1280    96 * 1064
+                128 * 800
+         Color:  16 * 3200    32 * 1600
+                 48 * 1064    64 * 800
+                 80 * 640     96 * 528
+                128 * 400
+2. Support for all scanning
+3. Support 16 free partition
+4. Support for full screen and run side by side partitions run
+5. Support full screen dynamic background and dynamic background by district
+6. Support N kinds of cool text animation
+7. U disk support and WiFi dual mode of communication
+8. U disk support and WiFi program upgrade
+9. automatically obtain IP, IP settings without
+10. Supports all U disk storage format FAT32 / EXFAT
+
+/ ****
+MODEL: ZH-W5
+
+1. Maximum Points: 163,840 (color area halved)
+    Monochrome:  16 * 4096     32 * 4096     48 * 3408     64 * 2560
+                 80 * 2048     96 * 1704    128 * 1280    144 * 1136
+                160 * 1024    176 * 928     192 * 848     208 * 784
+                224 * 728     240 * 680     256 * 640
+         Color:  16 * 4096     32 * 2048     48 * 1696     64 * 1280
+                 80 * 1024     96 * 848     128 * 640
+2. Support for all scanning
+3. Support 16 free partition
+4. Support for full screen and run side by side partitions run
+5. Support full screen dynamic background and dynamic background by district
+6. Support N kinds of cool text animation
+7. U disk support and WiFi dual mode of communication
+8. U disk support and WiFi program upgrade
+9. automatically obtain IP, IP settings without
+10. Supports all U disk storage format FAT32 / EXFAT
+
+/ ****
+MODEL: ZH-W6
+
+1. Maximum Points: 524288 (color area halved)
+    Monochrome:  32 * 4096     64 * 4096     96 * 4096    128 * 4096
+                144 * 3640    160 * 3272    176 * 2976    192 * 2728
+                208 * 2520    224 * 2336    240 * 2184    256 * 2048
+         Color:  32 * 4096     64 * 4096     96 * 2728    128 * 2048
+                144 * 1816    160 * 1632    176 * 1488    192 * 1360
+                208 * 1256    224 * 1168    240 * 1088    256 * 1024
+2. Support for all scanning
+3. Support 16 free partition
+4. Support for full screen and run side by side partitions run
+5. Support full screen dynamic background and dynamic background by district
+6. Support N kinds of cool text animation
+7. U disk support and WiFi dual mode of communication
+8. U disk support and WiFi program upgrade
+9. automatically obtain IP, IP settings without
+10. Supports all U disk storage format FAT32 / EXFAT
+
+/ ****
+MODEL: ZH-W7
+
+1. Maximum Points: 524288 (color area halved)
+    Monochrome:  32 * 4096     64 * 4096     96 * 4096    128 * 4096
+                160 * 3272    192 * 2728    224 * 2336    256 * 2048
+                288 * 1816    320 * 1632    352 * 1488    384 * 1360
+                416 * 1256    448 * 1168    480 * 1088    512 * 1024
+         Color:  32 * 4096     64 * 4096     96 * 2728    128 * 2048
+                160 * 1632    192 * 1360    224 * 1168    256 * 1024
+                288 * 904     320 * 816     352 * 744     384 * 680
+                416 * 624     448 * 584     480 * 544     512 * 512
+2. Support for all scanning
+3. Support 16 free partition
+4. Support for full screen and run side by side partitions run
+5. Support full screen dynamic background and dynamic background by district
+6. Support N kinds of cool text animation
+7. U disk support and WiFi dual mode of communication
+8. U disk support and WiFi program upgrade
+9. automatically obtain IP, IP settings without
+10. Supports all U disk storage format FAT32 / EXFAT
+
+/ ****
+MODEL: ZH-Mm
+
+1. Maximum Points: 5376
+      Tricolor: 16 * 336
+2. Support for all scanning
+3. Support 16 free partition
+4. Support for full screen and run side by side partitions run
+5. Support full screen dynamic background and dynamic background by district
+6. Support N kinds of cool text animation
+7. U disk support communication mode
+8. U disk support program upgrade
+9. Support for all U disk storage format FAT32 / EXFAT
+
+/ ****
+MODEL: ZH-M0
+
+1. Maximum points: three colors 24576
+     Three colors: 64*384 32*768 16*1536
+2. Support all scanning methods
+3. Supports 16 free partitions
+4. Support the whole screen running and run by partition
+5. Support the dynamic environment of the whole screen and press the dynamic background by partition
+6. Support U disk communication
+7. Support U disk program upgrade
+
+/ ****
+MODEL: ZH-M2
+
+1. Maximum Points: 24576
+      Tricolor: 32*768    64*384 
+2. Support for all scanning
+3. Support 16 free partition
+4. Support for full screen and run side by side partitions run
+5. Support full screen dynamic background and dynamic background by district
+6. Support N kinds of cool text animation
+7. Support U disk and dual serial communication mode
+8. U disk support program upgrade
+9. Support for all U disk storage format FAT32 / EXFAT
+10. RS-232 communication line is straight line
+  Connection follows
+        PC ---- Device
+         2 ---- 2
+         3 ---- 3
+         5 ---- 5
+
+/ ****
+MODEL: ZH-M4
+
+1. Maximum Points: 33792
+      Tricolor:  16 * 1360    32 * 1056
+                 48 * 704     64 * 528
+2. Support for all scanning
+3. Support 16 free partition
+4. Support for full screen and run side by side partitions run
+5. Support full screen dynamic background and dynamic background by district
+6. Support N kinds of cool text animation
+7. Support U disk and dual serial communication mode
+8. U disk support program upgrade
+9. Support for all U disk storage format FAT32 / EXFAT
+10. RS-232 communication line is straight line
+  Connection follows
+        PC ---- Device
+         2 ---- 2
+         3 ---- 3
+         5 ---- 5
+
+/ ****
+MODEL: ZH-M7
+
+1. Maximum Points: 174080
+      Tricolor:  32 * 1360     64 * 1360     96 * 1360    128 * 1360
+                160 * 1088    192 * 896     224 * 768     256 * 672
+2. Support for all scanning
+3. Support 16 free partition
+4. Support for full screen and run side by side partitions run
+5. Support full screen dynamic background and dynamic background by district
+6. Support N kinds of cool text animation
+7. Support U disk and dual serial communication mode
+8. U disk support program upgrade
+9. Support for all U disk storage format FAT32 / EXFAT
+10. RS-232 communication line is straight line
+  Connection follows
+        PC ---- Device
+         2 ---- 2
+         3 ---- 3
+         5 ---- 5
+
+/ ****
+MODEL: ZH-SmL
+
+1. Maximum Points: 16384 (color area halved)
+    Monochrome: 16 * 1024    32 * 512
+         Color: 16 * 512     32 * 256
+2. Support for all scanning
+3. Support 16 free partition
+4. Support for full screen and run side by side partitions run
+5. Support full screen dynamic background and dynamic background by district
+6. Support N kinds of cool text animation
+7. U disk support communication mode
+8. U disk support program upgrade
+9. Support for all U disk storage format FAT32 / EXFAT
+
+/ ****
+MODEL: ZH-S0L
+
+1. Maximum Points: 32768 (color area halved)
+    Monochrome: 32 * 1024
+         Color: 16 * 1024    32 * 512
+2. Support for all scanning
+3. Support 16 free partition
+4. Support for full screen and run side by side partitions run
+5. Support full screen dynamic background and dynamic background by district
+6. Support N kinds of cool text animation
+7. Support U disk and dual serial communication mode
+8. U disk support program upgrade
+9. Support for all U disk storage format FAT32 / EXFAT
+10. RS-232 communication line is straight line
+  Connection follows
+        PC ---- Device
+         2 ---- 2
+         3 ---- 3
+         5 ---- 5
+
+/ ****
+MODEL: ZH-S1L
+
+1. Maximum Points: 49152 (color area halved)
+    Monochrome: 48 * 1024
+         Color: 32 * 768    48 * 512
+2. Support for all scanning
+3. Support 16 free partition
+4. Support for full screen and run side by side partitions run
+5. Support full screen dynamic background and dynamic background by district
+6. Support N kinds of cool text animation
+7. Support U disk and dual serial communication mode
+8. U disk support program upgrade
+9. Support for all U disk storage format FAT32 / EXFAT
+10. RS-232 communication line is straight line
+  Connection follows
+        PC ---- Device
+         2 ---- 2
+         3 ---- 3
+         5 ---- 5
+
+/ ****
+MODEL: ZH-S2L
+
+1. Maximum Points: 65536 (color area halved)
+    Monochrome: 64 * 1024
+         Color: 32 * 1024    48 * 680
+                64 * 512
+2. Support for all scanning
+3. Support 16 free partition
+4. Support for full screen and run side by side partitions run
+5. Support full screen dynamic background and dynamic background by district
+6. Support N kinds of cool text animation
+7. Support U disk and dual serial communication mode
+8. U disk support program upgrade
+9. Support for all U disk storage format FAT32 / EXFAT
+10. RS-232 communication line is straight line
+  Connection follows
+        PC ---- Device
+         2 ---- 2
+         3 ---- 3
+         5 ---- 5
