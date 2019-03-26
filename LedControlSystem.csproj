@@ -916,5 +916,15 @@
   <ItemGroup>
     <None Include="Resources\tsbtnAlignCenter.Image.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Flash32_11_8_800_168.ocx" />
+    <Content Include="bin\Debug\FlexCell.dll" />
+    <Content Include="bin\Debug\LedCommunication.dll" />
+    <Content Include="bin\Debug\LedModel.dll" />
+    <Content Include="bin\Debug\LedResources.dll" />
+    <Content Include="bin\Debug\LedService.dll" />
+    <Content Include="bin\Debug\ManagedWifi.dll" />
+    <Content Include="bin\Debug\OfficeTool.dll" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
