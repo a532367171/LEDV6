@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CloudComm>
+  <User username="">
+		<Record TerminalID="" TerminalName="" TerminalDesc=""
+				LastSendCmdId="" LastCommand="" LastCmdSendStatus="" LastCmdSendTime=""
+				LastSendProgramId="" LastProgram="" LastProgramSendStatus="" LastProgramGetTime=""
+		/>
+  </User>
+</CloudComm>

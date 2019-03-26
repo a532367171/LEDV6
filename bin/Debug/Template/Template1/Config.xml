@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Root>
+	<Record ID="FontFamily" Description="">微软雅黑</Record>
+	<Record ID="FontSize" Description="依次为:Logo,Menu,ToolButton,Tree">12,14,14,12,12,12</Record>
+	<Record ID="MainForm_BackColor" Description="">#FFFFFF</Record>
+	<Record ID="GroupBox_BackColor" Description="">#FFECD6</Record>
+	<Record ID="GroupBox_BroderColor" Description="">#CA8D41</Record>
+	<Record ID="Panel_BroderColor" Description="">#A8BDCB</Record>
+	<Record ID="Main_LogoColor" Description="">#FFDE00</Record>
+	<Record ID="NagivatorColor" Description="">#FFFFFF</Record>
+	<Record ID="TreeViewColor" Description="">#000000</Record>
+	<Record ID="MenuItemBackcolor" Description="">#2E83CE</Record>
+	<Record ID="MenuForecolor" Description="">#FFFFFF</Record>
+	<Record ID="MenuMouseEnterColor" Description="">#044e8f</Record>
+	<Record ID="SmoothCorner" Description="是否平滑窗体角落">true</Record>
+</Root>
