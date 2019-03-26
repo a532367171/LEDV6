@@ -547,6 +547,7 @@
     <Compile Include="System.Windows.Forms\MessageBoxManager.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="19-3-12.zip" />
     <None Include="19-3-12\ZH-LED\2018120916234442300170735\2018122515084143720995229DText.zhc" />
     <None Include="19-3-12\ZH-LED\2018120916234442300170735\2018122515165700020876009DText.zhc" />
     <None Include="19-3-12\ZH-LED\2018120916234442300170735\2018122515241991720450851DText.zhc" />
